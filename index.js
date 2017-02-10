@@ -192,7 +192,7 @@ class SvgUri extends Component{
 	render(){
     try{
 		if (this.props.svgXmlData && !this.state.svgXmlData){
-			this.setState({svgXmlData: this.props.svgXmlData});
+			this.state.svgXmlData = this.props.svgXmlData;
 		}
         if (this.state.svgXmlData == null)
             return null;
